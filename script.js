@@ -1,4 +1,4 @@
-// MYSEED — mockup website. Không cần build; dữ liệu mẫu lấy từ proposal chính thức (09/2026).
+// MYSEED — mockup website. Không cần build.
 
 /* ---------- Menu trên điện thoại ---------- */
 const navToggle = document.querySelector('.nav-toggle');
