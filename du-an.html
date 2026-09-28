@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Hồ sơ dự án · MYSEED</title>
+  <meta name="description" content="Hồ sơ chi tiết hạt giống trên MYSEED: nguồn lực đang cần và yêu cầu kết nối.">
+  <meta property="og:title" content="Hồ sơ dự án · MYSEED">
+  <meta property="og:description" content="Hồ sơ chi tiết hạt giống trên MYSEED: nguồn lực đang cần và yêu cầu kết nối.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌱</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Lora:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="index.html"><span class="brand-mark"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21V11" stroke="#f3d27a" stroke-width="2" stroke-linecap="round" fill="none"/><path d="M12 13C8 13 5.5 10.5 5.5 6.5 9.5 6.5 12 9 12 13Z" fill="#cfe7c4"/><path d="M12 11C12 7.5 14.5 4.5 18.5 4.5 18.5 8.5 16 11 12 11Z" fill="#9fd49a"/></svg></span><b>MYSEED</b></a>
+    <button class="nav-toggle" aria-label="Mở menu" aria-expanded="false">☰</button>
+    <nav class="nav-links" aria-label="Điều hướng chính">
+      <a href="index.html">Trang chủ</a><a href="gioi-thieu.html">Giới thiệu</a><a href="vuon-uom.html">Vườn Ươm <span class="star">★</span></a><a href="tin-tuc.html">Tin tức / Cẩm nang</a><a href="lien-he.html">Liên hệ</a>
+      <a class="btn btn-sm" href="gui-hat-giong.html">Gửi hạt giống</a>
+    </nav>
+  </div>
+</header>
+<main>
+
+<section class="page-hero">
+  <div class="wrap">
+    <p class="crumbs"><a href="index.html">Trang chủ</a> / <a href="vuon-uom.html">Vườn Ươm</a> / <span id="dCrumb"></span></p>
+    <div class="seed-top" style="justify-content:flex-start;gap:12px;margin-bottom:10px"><span class="seed-id" id="dCode"></span><span id="dState"></span></div>
+    <h1 id="dTitle"></h1>
+    <div class="meta" id="dMeta"></div>
+  </div>
+</section>
+
+<section class="section" id="detail">
+  <div class="wrap detail-grid">
+    <div>
+      <h2>Tóm tắt</h2>
+      <p id="dSummary" class="lead"></p>
+      <div class="tags" id="dFields" style="margin-bottom:24px"></div>
+      <div class="grid-2">
+        <div class="card"><h3>Vì sao hạt giống dừng lại</h3><p id="dWhy"></p></div>
+        <div class="card"><h3>Giá trị bản địa sẵn có</h3><p id="dLocal"></p></div>
+      </div>
+
+      <div data-only="hat-giong-001">
+        <h2 class="sub">Hai trục phát triển</h2>
+        <div class="grid-2">
+          <div class="card">
+            <h3>Sâm Bố chính dưới tán rừng</h3>
+            <p>Thử nghiệm nhân giống và trồng từ năm 2020 (cùng sâm cau). Sản phẩm hiện có: rượu sâm Vạn Thảo, sâm sấy khô.</p>
+            <div class="kv">
+              <div><b>1,0 ha</b><span>quy mô hiện tại</span></div>
+              <div><b>3.000–3.500</b><span>kg/ha/năm</span></div>
+              <div><b>Hàng trăm ha</b><span>khả năng tổ chức</span></div>
+            </div>
+          </div>
+          <div class="card">
+            <h3>Điểm du lịch sinh thái Đắk Ken</h3>
+            <p>Tiểu khu 1050. Khám phá rừng tự nhiên, thu hái dược liệu, ẩm thực địa phương. Hiện có 03 bungalow, 2,2 km đường, vườn thảo dược 10.000 m², 03 xe điện.</p>
+            <div class="capital">
+              <div class="capital-bar" role="img" aria-label="Đã đầu tư khoảng 2,1 trên 5 tỷ đồng"><i></i></div>
+              <div class="capital-legend"><span>~2,1 tỷ đã đầu tư</span><span>~5 tỷ quy hoạch</span></div>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="sub">Nhu cầu nguồn lực và ai có thể đáp ứng</h2>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Dự án cần</th><th>Loại nguồn lực</th><th>Ai có thể đáp ứng</th></tr></thead>
+            <tbody>
+              <tr><td>Vốn hoàn thiện Điểm du lịch Đắk Ken: còn khoảng 2,9 tỷ đồng (5 tỷ quy hoạch − 2,1 tỷ đã đầu tư)</td><td>Vốn</td><td>Nhà đầu tư cá nhân, quỹ, doanh nghiệp du lịch</td></tr>
+              <tr><td>Truyền thông, xây dựng thương hiệu cho Đắk Ken và sâm Bố chính</td><td>Nhân lực, chuyên môn</td><td>Sinh viên truyền thông – marketing, người làm nội dung</td></tr>
+              <tr><td>Đầu ra cho sâm Bố chính (từ quy mô 1,0 ha)</td><td>Thị trường, đối tác</td><td>Nhà hàng, đơn vị phân phối, kênh bán trực tuyến</td></tr>
+              <tr><td>Chế biến sâu: trà, cao, viên nang, bột hòa tan, sâm tiềm, lẩu sâm</td><td>Chuyên môn</td><td>Chuyên gia công nghệ thực phẩm, dược</td></tr>
+              <tr><td>Tư vấn pháp lý và thuế cho rượu sâm, dược liệu</td><td>Chuyên môn pháp lý</td><td>Luật sư, chuyên gia thuế</td></tr>
+              <tr><td>Khách cho Điểm du lịch ngoài dịp lễ, Tết</td><td>Thị trường</td><td>Công ty lữ hành, trường học, nhóm nghiên cứu, người làm việc từ xa</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="src" style="margin-top:8px">Nhu cầu vốn cụ thể sẽ được xác nhận khi thẩm định hồ sơ.</p>
+
+        <h2 class="sub">Chỉ số theo dõi so với mức nền</h2>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Nhóm</th><th>Chỉ số</th><th>Mức nền hiện tại</th></tr></thead>
+            <tbody>
+              <tr><th>Du lịch</th><td>Lượng khách; tỷ lệ khách ngoài dịp lễ, Tết; khách biết đến qua MYSEED</td><td>Khoảng 3.000 khách/năm, chủ yếu dịp lễ, Tết</td></tr>
+              <tr><th>Sản phẩm</th><td>Diện tích, sản lượng sâm Bố chính được tiêu thụ; số đối tác đầu ra</td><td>1,0 ha; 3.000–3.500 kg/ha/năm</td></tr>
+              <tr><th>Vốn</th><td>Vốn huy động cho giai đoạn tiếp theo của Điểm du lịch</td><td>~2,1 tỷ đã đầu tư / ~5 tỷ</td></tr>
+              <tr><th>Xã hội, môi trường</th><td>Việc làm, thu nhập bổ sung; khai thác đúng phạm vi pháp lý</td><td>—</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2 class="sub">Căn cứ pháp lý</h2>
+        <ul class="list">
+          <li>Phương án quản lý rừng bền vững 2021–2031, Quyết định số 2059/QĐ-UBND ngày 26/11/2021 của UBND tỉnh Đắk Nông (trước sắp xếp): Công ty được trồng, khai thác các loài thực vật thông thường trong rừng tự nhiên theo quy định pháp luật.</li>
+          <li>Quyết định số 293/QĐ-UBND công nhận Điểm du lịch sinh thái Đắk Ken.</li>
+          <li>MYSEED chỉ kết nối và truyền thông trong phạm vi được phép; ưu tiên sản phẩm không cồn (sâm sấy, trà, thực phẩm, ẩm thực).</li>
+        </ul>
+        <p><a class="btn btn-ghost btn-sm" href="tin-tuc.html#case-study">Đọc toàn bộ case study</a></p>
+      </div>
+    </div>
+
+    <aside class="cta-box">
+      <p class="eyebrow">Tham gia ươm hạt giống này</p>
+      <h3>Nguồn lực đang cần</h3>
+      <div class="needs" id="dNeeds"></div>
+      <p>Chọn tư cách, nguồn lực bạn có thể góp và mời thêm người cùng tham gia. Chủ dự án sẽ nhận yêu cầu và quyết định.</p>
+      <button class="btn btn-gold" data-open-modal>Đầu tư / Tham gia</button>
+      <p class="small" style="margin-top:12px">MYSEED chỉ đề xuất kết nối; mọi quyết định hợp tác thuộc về hai bên.</p>
+    </aside>
+  </div>
+</section>
+
+<div class="modal" id="joinModal" hidden role="dialog" aria-modal="true" aria-labelledby="mTitle">
+  <div class="modal-box">
+    <div class="modal-head">
+      <div><p class="eyebrow" style="margin:0">Yêu cầu kết nối</p><h3 id="mTitle" style="margin:.2em 0 0">Tham gia: <span id="mSeed"></span></h3></div>
+      <button class="modal-close" aria-label="Đóng">×</button>
+    </div>
+    <div class="progress"><span>1. Tư cách</span><span>2. Chuyên môn</span><span>3. Mời người</span><span>4. Nhóm chat</span></div>
+    <form onsubmit="return false">
+      <div class="step-pane">
+        <p class="small muted" style="margin:0">Xác nhận tư cách giúp chủ dự án biết bạn là ai. Nhà đầu tư, doanh nghiệp và đối tác sẽ được xác minh thông tin cơ bản.</p>
+        <div class="opt-grid">
+          <label class="opt"><input type="radio" name="role" value="Nhà đầu tư"> Nhà đầu tư</label>
+          <label class="opt"><input type="radio" name="role" value="Người có chuyên môn"> Người có chuyên môn</label>
+          <label class="opt"><input type="radio" name="role" value="Mentor / chuyên gia"> Mentor / chuyên gia</label>
+          <label class="opt"><input type="radio" name="role" value="Doanh nghiệp / đối tác"> Doanh nghiệp / đối tác</label>
+          <label class="opt"><input type="radio" name="role" value="Tổ chức hỗ trợ"> Tổ chức hỗ trợ</label>
+          <label class="opt"><input type="radio" name="role" value="Sinh viên – đội ươm"> Sinh viên – đội ươm</label>
+        </div>
+        <div class="form-row">
+          <label for="mName">Họ tên / tên đơn vị<input id="mName" autocomplete="name"></label>
+          <label for="mContact">Email hoặc số điện thoại<input id="mContact" autocomplete="email"></label>
+        </div>
+      </div>
+      <div class="step-pane" hidden>
+        <p class="small muted" style="margin:0">Bạn có thể đóng góp nguồn lực nào dự án đang cần?</p>
+        <div class="opt-grid" id="mOffers"></div>
+        <label for="mNote">Mô tả thêm về chuyên môn hoặc mức đóng góp <span class="hint">(không bắt buộc)</span><textarea id="mNote" rows="3"></textarea></label>
+      </div>
+      <div class="step-pane" hidden>
+        <label for="mInvite">Mời người cùng tham gia <span class="hint">Nhập email, cách nhau bằng dấu phẩy (không bắt buộc)</span><textarea id="mInvite" rows="2" placeholder="ban.a@example.com, ban.b@example.com"></textarea></label>
+        <label for="mMsgOwner">Lời nhắn gửi người khởi nguồn<textarea id="mMsgOwner" rows="3" placeholder="Giới thiệu ngắn về bạn và cách bạn muốn đồng hành"></textarea></label>
+      </div>
+      <div class="step-pane" hidden>
+        <div class="chat-preview">
+          <header id="chatName"></header>
+          <ul id="chatMembers"></ul>
+        </div>
+        <p class="small" style="margin:0"><b>Nguồn lực đề xuất:</b> <span id="chatOffer"></span></p>
+        <p class="small muted" style="margin:0">Nhóm chat được tạo khi chủ dự án chấp nhận yêu cầu. Ở phiên bản đầu, hai bên nhận thông tin liên hệ của nhau; nhắn tin trong nền tảng thuộc giai đoạn 2.</p>
+      </div>
+      <div class="step-pane" hidden>
+        <div class="success">
+          <h3>Đã gửi yêu cầu kết nối</h3>
+          <p style="margin:0">Chủ dự án sẽ xem xét và chấp nhận hoặc từ chối. Bản mockup này chưa gửi dữ liệu thật.</p>
+        </div>
+      </div>
+      <p class="form-msg" id="mMsg" role="alert"></p>
+      <div class="modal-foot">
+        <button type="button" class="btn btn-ghost btn-sm" id="mBack">Quay lại</button>
+        <button type="button" class="btn btn-sm" id="mNext" style="margin-left:auto">Tiếp tục</button>
+      </div>
+    </form>
+  </div>
+</div>
+<section class="closing">
+  <div class="wrap">
+    <p class="q">“Một ý tưởng không nên bị bỏ quên chỉ vì người sở hữu nó chưa có đủ nguồn lực.”</p>
+    <p class="s">Mọi ý tưởng bị bỏ quên đều xứng đáng có cơ hội thứ hai để sống.</p>
+    <a class="btn btn-band" href="gui-hat-giong.html">Gửi hạt giống của bạn</a>
+  </div>
+</section>
+</main>
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="index.html"><span class="brand-mark"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21V11" stroke="#f3d27a" stroke-width="2" stroke-linecap="round" fill="none"/><path d="M12 13C8 13 5.5 10.5 5.5 6.5 9.5 6.5 12 9 12 13Z" fill="#cfe7c4"/><path d="M12 11C12 7.5 14.5 4.5 18.5 4.5 18.5 8.5 16 11 12 11Z" fill="#9fd49a"/></svg></span><b>MYSEED</b></a>
+        <p class="muted small" style="margin-top:12px">Ý tưởng không chết — chỉ chờ được kết nối. Nền tảng kết nối những hạt giống ý tưởng bị bỏ quên với vốn, nhân lực, chuyên môn và đối tác để bén rễ thành sinh kế ngay tại quê hương.</p>
+      </div>
+      <div>
+        <h4>Khám phá</h4>
+        <ul>
+          <li><a href="vuon-uom.html">Vườn Ươm</a></li>
+          <li><a href="du-an.html#hat-giong-001">Hạt giống 001</a></li>
+          <li><a href="gui-hat-giong.html">Gửi hạt giống</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Về MYSEED</h4>
+        <ul>
+          <li><a href="gioi-thieu.html#ve-chung-toi">Về chúng tôi</a></li>
+          <li><a href="gioi-thieu.html#co-che">Cơ chế vận hành</a></li>
+          <li><a href="gioi-thieu.html#sdgs">Liên kết SDGs</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Thông tin</h4>
+        <ul>
+          <li><a href="tin-tuc.html#case-study">Case study</a></li>
+          <li><a href="tin-tuc.html#cam-nang">Cẩm nang</a></li>
+          <li><a href="lien-he.html">Liên hệ</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>Chương trình “Sinh viên thế hệ mới” · Chủ đề “Quê mình có việc, Gen ‘Ziệt’ có cách”</span>
+      <span>Bản mockup tĩnh · dữ liệu theo proposal MYSEED 09/2026</span>
+    </div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

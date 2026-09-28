@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Vườn Ươm · MYSEED</title>
+  <meta name="description" content="Vườn Ươm MYSEED: hạt giống bỏ quên, đang ươm và phát triển thành cây, lọc theo lĩnh vực và khu vực.">
+  <meta property="og:title" content="Vườn Ươm · MYSEED">
+  <meta property="og:description" content="Vườn Ươm MYSEED: hạt giống bỏ quên, đang ươm và phát triển thành cây, lọc theo lĩnh vực và khu vực.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌱</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Lora:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="index.html"><span class="brand-mark"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21V11" stroke="#f3d27a" stroke-width="2" stroke-linecap="round" fill="none"/><path d="M12 13C8 13 5.5 10.5 5.5 6.5 9.5 6.5 12 9 12 13Z" fill="#cfe7c4"/><path d="M12 11C12 7.5 14.5 4.5 18.5 4.5 18.5 8.5 16 11 12 11Z" fill="#9fd49a"/></svg></span><b>MYSEED</b></a>
+    <button class="nav-toggle" aria-label="Mở menu" aria-expanded="false">☰</button>
+    <nav class="nav-links" aria-label="Điều hướng chính">
+      <a href="index.html">Trang chủ</a><a href="gioi-thieu.html">Giới thiệu</a><a href="vuon-uom.html" aria-current="page">Vườn Ươm <span class="star">★</span></a><a href="tin-tuc.html">Tin tức / Cẩm nang</a><a href="lien-he.html">Liên hệ</a>
+      <a class="btn btn-sm" href="gui-hat-giong.html">Gửi hạt giống</a>
+    </nav>
+  </div>
+</header>
+<main>
+<section class="page-hero">
+  <div class="wrap">
+    <p class="crumbs"><a href="index.html">Trang chủ</a> / Vườn Ươm</p>
+    <p class="eyebrow">Vườn Ươm ★</p>
+    <h1>Nơi các hạt giống chờ được đánh thức</h1>
+    <p class="lead">Mỗi thẻ là một ý tưởng có thật, kèm lý do nó từng dừng lại và nguồn lực nó đang cần. Lọc theo trạng thái, lĩnh vực và khu vực để tìm hạt giống bạn có thể góp sức.</p>
+    
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="states" role="tablist" aria-label="Trạng thái hạt giống">
+      <button role="tab" data-state="all" aria-selected="true">Tất cả <small></small></button>
+      <button role="tab" data-state="bo-quen" aria-selected="false">Hạt Giống Bỏ Quên <small></small></button>
+      <button role="tab" data-state="dang-uom" aria-selected="false">Hạt Giống Đang Ươm <small></small></button>
+      <button role="tab" data-state="thanh-cay" aria-selected="false">Phát Triển Thành Cây <small></small></button>
+    </div>
+    <div class="filters">
+      <label for="fField">Lĩnh vực
+        <select id="fField">
+          <option value="">Tất cả lĩnh vực</option>
+          <option value="nong-san">Nông sản &amp; dược liệu bản địa</option>
+          <option value="lang-nghe">Thủ công &amp; làng nghề</option>
+          <option value="tai-che">Tái chế &amp; môi trường</option>
+          <option value="du-lich">Du lịch trải nghiệm bản địa</option>
+          <option value="cong-nghe">Công nghệ &amp; giáo dục cộng đồng</option>
+        </select>
+      </label>
+      <label for="fRegion">Khu vực
+        <select id="fRegion">
+          <option value="">Cả nước</option>
+          <option value="bac">Miền Bắc</option>
+          <option value="trung">Miền Trung</option>
+          <option value="nam">Miền Nam</option>
+        </select>
+      </label>
+      <label for="fSearch">Tìm kiếm
+        <input id="fSearch" type="search" placeholder="Tên, địa phương, nguồn lực cần…">
+      </label>
+    </div>
+    <div class="seed-grid" id="garden" aria-live="polite"></div>
+    <div class="empty" id="gardenEmpty" hidden>
+      <h3></h3>
+      <p></p>
+      <a class="btn btn-sm" href="gui-hat-giong.html">Gửi hạt giống của bạn</a>
+    </div>
+    <p class="mock-note" style="margin-top:24px">Bản mockup: danh sách dùng dữ liệu mẫu từ proposal. Phiên bản MVP sẽ đọc dữ liệu thật từ cơ sở dữ liệu.</p>
+  </div>
+</section>
+<section class="closing">
+  <div class="wrap">
+    <p class="q">“Một ý tưởng không nên bị bỏ quên chỉ vì người sở hữu nó chưa có đủ nguồn lực.”</p>
+    <p class="s">Mọi ý tưởng bị bỏ quên đều xứng đáng có cơ hội thứ hai để sống.</p>
+    <a class="btn btn-band" href="gui-hat-giong.html">Gửi hạt giống của bạn</a>
+  </div>
+</section>
+</main>
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="index.html"><span class="brand-mark"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21V11" stroke="#f3d27a" stroke-width="2" stroke-linecap="round" fill="none"/><path d="M12 13C8 13 5.5 10.5 5.5 6.5 9.5 6.5 12 9 12 13Z" fill="#cfe7c4"/><path d="M12 11C12 7.5 14.5 4.5 18.5 4.5 18.5 8.5 16 11 12 11Z" fill="#9fd49a"/></svg></span><b>MYSEED</b></a>
+        <p class="muted small" style="margin-top:12px">Ý tưởng không chết — chỉ chờ được kết nối. Nền tảng kết nối những hạt giống ý tưởng bị bỏ quên với vốn, nhân lực, chuyên môn và đối tác để bén rễ thành sinh kế ngay tại quê hương.</p>
+      </div>
+      <div>
+        <h4>Khám phá</h4>
+        <ul>
+          <li><a href="vuon-uom.html">Vườn Ươm</a></li>
+          <li><a href="du-an.html#hat-giong-001">Hạt giống 001</a></li>
+          <li><a href="gui-hat-giong.html">Gửi hạt giống</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Về MYSEED</h4>
+        <ul>
+          <li><a href="gioi-thieu.html#ve-chung-toi">Về chúng tôi</a></li>
+          <li><a href="gioi-thieu.html#co-che">Cơ chế vận hành</a></li>
+          <li><a href="gioi-thieu.html#sdgs">Liên kết SDGs</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Thông tin</h4>
+        <ul>
+          <li><a href="tin-tuc.html#case-study">Case study</a></li>
+          <li><a href="tin-tuc.html#cam-nang">Cẩm nang</a></li>
+          <li><a href="lien-he.html">Liên hệ</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>Chương trình “Sinh viên thế hệ mới” · Chủ đề “Quê mình có việc, Gen ‘Ziệt’ có cách”</span>
+      <span>Bản mockup tĩnh · dữ liệu theo proposal MYSEED 09/2026</span>
+    </div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

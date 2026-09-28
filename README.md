@@ -1,58 +1,36 @@
-# 🌱 MYSEED · Hạt Giống Bỏ Quên
+# 🌱 MYSEED
 
-> “Chúng tôi không bắt đầu bằng một dự án. Chúng tôi bắt đầu bằng một ý tưởng mà một người trẻ từng bỏ cuộc.”
+> Ý tưởng không chết — chỉ chờ được kết nối.
 
-Website giới thiệu dự án **MYSEED – Hạt Giống Bỏ Quên**: nền tảng trung gian đánh thức những ý tưởng vì quê hương mà sinh viên từng bỏ dở, ghép chúng với người có kỹ năng phù hợp để hiện thực hóa thành mô hình sinh kế thật tại địa phương, rồi trao lại quyền vận hành cho người khởi nguồn và cộng đồng.
+Bản **mockup website tĩnh** của MYSEED, dựng theo sơ đồ trang (mục 9.1) của proposal chính thức (09/2026), chương trình “Sinh viên thế hệ mới” – chủ đề “Quê mình có việc, Gen ‘Ziệt’ có cách”.
 
-## Nội dung website
+Case thí điểm xuyên suốt: **Hạt giống 001 — Sâm và dược liệu bản địa, Đắk Nông** (Công ty TNHH MTV đầu tư phát triển Đại Thành).
 
-| Mục | Nội dung |
-| --- | --- |
-| Vấn đề | Số liệu NEET, thu nhập, di cư nông thôn – thành thị; case giá cam sành Vĩnh Long |
-| Cơ chế | Vòng đời 5 bước: Gửi → Tìm thấy → Ươm → Nảy mầm → Bén rễ; bảng so sánh cách tiếp cận |
-| Vườn ươm | Mô phỏng website trung gian: hạt giống cam sành (mục 5.1) + biểu mẫu gửi hạt giống mới |
-| Case cam sành | Thí điểm 500kg, biểu đồ trước/sau, **máy tính thu nhập nông dân**, bảng chi phí pilot |
-| SDGs | 4 mục tiêu trọng tâm (1, 8, 9, 12) + lưới 17 SDGs có thể bấm xem ghi chú |
-| Lộ trình | 3 giai đoạn, đối tác, quản trị rủi ro, đo lường tác động |
-| Vai trò đội | Đội là “người đánh thức” (mục 12) + kết luận |
+## Các trang (theo sitemap)
 
-## Cấu trúc thư mục
+| Tệp | Nhánh sitemap | Nội dung |
+| --- | --- | --- |
+| `index.html` | Trang chủ | 7 dải: banner + câu chuyện Hạt giống 001; giới thiệu kèm số liệu; cơ chế 5 bước Gửi · Tìm thấy · Ươm · Nảy mầm · Bén rễ; hạt giống nổi bật; lưới dự án mới nhất; đối tác; chân trang + nút “Gửi hạt giống của bạn” |
+| `gioi-thieu.html` | Giới thiệu | Về chúng tôi (đội thực hiện), Tầm nhìn – Sứ mệnh, Cơ chế vận hành chi tiết, Liên kết SDGs (1, 8, 9, 12, 15) |
+| `vuon-uom.html` | Vườn Ươm ★ | 3 trạng thái (Bỏ Quên / Đang Ươm / Phát Triển Thành Cây), lọc 5 lĩnh vực và 3 khu vực, tìm kiếm |
+| `du-an.html` | Chi tiết dự án | Hồ sơ hạt giống (`du-an.html#hat-giong-001`) + modal đầu tư: xác nhận tư cách → chuyên môn → mời người tham gia → tạo nhóm chat |
+| `gui-hat-giong.html` | Gửi hạt giống | Tên ý tưởng, mô tả, lý do bỏ dở, giá trị bản địa sẵn có, thông tin liên hệ |
+| `tin-tuc.html` | Tin tức / Cẩm nang | Case study Hạt giống 001, tin tức nội bộ, sự kiện, cẩm nang |
+| `lien-he.html` | Liên hệ | Hotline, hỗ trợ trực tuyến, mạng xã hội |
 
-```
-├── index.html          # Toàn bộ nội dung trang
-├── assets/
-│   ├── style.css       # Giao diện (tự động hỗ trợ chế độ tối)
-│   └── script.js       # Vườn ươm, máy tính thu nhập, lưới SDGs
-├── .nojekyll           # Để GitHub Pages phục vụ file tĩnh nguyên bản
-└── README.md
-```
-
-Không cần cài đặt hay build — chỉ là HTML/CSS/JS thuần.
+`style.css` là giao diện chung, `script.js` chứa dữ liệu Vườn Ươm (mảng `SEEDS`) và tương tác. Không cần cài đặt hay build.
 
 ## Đưa lên GitHub Pages
 
-1. Tạo repository mới trên GitHub (ví dụ `myseed`), để **Public**.
-2. Tải toàn bộ file trong thư mục này lên repo (nút **Add file → Upload files**, hoặc dùng git):
-   ```bash
-   git init
-   git add .
-   git commit -m "MYSEED website"
-   git branch -M main
-   git remote add origin https://github.com/<tên-tài-khoản>/myseed.git
-   git push -u origin main
-   ```
-3. Vào **Settings → Pages**, mục *Build and deployment* chọn **Deploy from a branch**, branch `main`, thư mục `/ (root)` → **Save**.
-4. Sau 1–2 phút, website sẽ có tại `https://<tên-tài-khoản>.github.io/myseed/`.
+1. Tải **tất cả** tệp trong thư mục này lên nhánh `main` của repo (Add file → Upload files). Tệp trùng tên sẽ được thay thế.
+2. Settings → Pages → Deploy from a branch → `main` / `(root)` → Save.
+3. Website: `https://<tên-tài-khoản>.github.io/<tên-repo>/`
 
-## Tùy chỉnh nhanh
+## Cần cập nhật
 
-- **Hạt giống:** thêm ý tưởng thật vào mảng `SAMPLE_SEEDS` trong `assets/script.js`.
-- **Màu sắc:** chỉnh các biến trong `:root` ở đầu `assets/style.css`.
+- Hotline, email, mạng xã hội trong `lien-he.html` (proposal đang để trống).
+- Thêm hạt giống mới: thêm một mục vào mảng `SEEDS` trong `script.js`.
 
-## Lưu ý về “Vườn ươm”
+## Lưu ý
 
-Phần vườn ươm là bản mô phỏng chạy hoàn toàn trên trình duyệt: hạt giống người dùng gửi chỉ lưu trong `localStorage` của máy đó, không chia sẻ với người khác. Để trở thành nền tảng thật, bước tiếp theo có thể là kết nối biểu mẫu với Google Forms/Sheets, Firebase hoặc Supabase.
-
-## Nguồn số liệu
-
-Theo bản đề xuất dự án: GSO (quý I, II/2025), Khảo sát di cư quốc gia, HCMCOUJS (2025, 606 sinh viên), Sở NN&PTNT Vĩnh Long.
+Đây là bản mockup: các biểu mẫu và modal chỉ mô phỏng, chưa gửi hay lưu dữ liệu. Số liệu lấy từ proposal chính thức MYSEED (09/2026) và các nguồn được trích dẫn trong đó.

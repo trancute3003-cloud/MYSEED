@@ -2,11 +2,11 @@
 <html lang="vi">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>MYSEED · Hạt Giống Bỏ Quên</title>
-  <meta name="description" content="MYSEED – Hạt Giống Bỏ Quên: nơi những ý tưởng vì quê hương bị bỏ dở được đánh thức, ghép với người có kỹ năng phù hợp và trao lại cho cộng đồng địa phương.">
-  <meta property="og:title" content="MYSEED · Hạt Giống Bỏ Quên">
-  <meta property="og:description" content="Nơi những ý tưởng vì quê hương được đánh thức.">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>MYSEED · Hạt giống bỏ quên</title>
+  <meta name="description" content="MYSEED kết nối những hạt giống ý tưởng bị bỏ quên với vốn, nhân lực, chuyên môn và đối tác để bén rễ thành sinh kế tại quê hương. Case thí điểm: Hạt giống 001 – Sâm và dược liệu bản địa, Đắk Nông.">
+  <meta property="og:title" content="MYSEED · Hạt giống bỏ quên">
+  <meta property="og:description" content="MYSEED kết nối những hạt giống ý tưởng bị bỏ quên với vốn, nhân lực, chuyên môn và đối tác để bén rễ thành sinh kế tại quê hương. Case thí điểm: Hạt giống 001 – Sâm và dược liệu bản địa, Đắk Nông.">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌱</text></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,342 +14,225 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<header class="nav" id="top">
+<header class="nav">
   <div class="wrap nav-inner">
-    <a class="brand" href="#top"><span class="brand-mark">🌱</span> MYSEED</a>
+    <a class="brand" href="index.html"><span class="brand-mark"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21V11" stroke="#f3d27a" stroke-width="2" stroke-linecap="round" fill="none"/><path d="M12 13C8 13 5.5 10.5 5.5 6.5 9.5 6.5 12 9 12 13Z" fill="#cfe7c4"/><path d="M12 11C12 7.5 14.5 4.5 18.5 4.5 18.5 8.5 16 11 12 11Z" fill="#9fd49a"/></svg></span><b>MYSEED</b></a>
     <button class="nav-toggle" aria-label="Mở menu" aria-expanded="false">☰</button>
-    <nav class="nav-links">
-      <a href="#van-de">Vấn đề</a>
-      <a href="#co-che">Cơ chế</a>
-      <a href="#vuon-uom">Vườn ươm</a>
-      <a href="#cam-sanh">Case cam sành</a>
-      <a href="#sdgs">SDGs</a>
-      <a href="#lo-trinh">Lộ trình</a>
-      <a href="#doi-ngu">Vai trò đội</a>
-      <a class="btn btn-sm" href="#gui-hat">Gửi hạt giống</a>
+    <nav class="nav-links" aria-label="Điều hướng chính">
+      <a href="index.html" aria-current="page">Trang chủ</a><a href="gioi-thieu.html">Giới thiệu</a><a href="vuon-uom.html">Vườn Ươm <span class="star">★</span></a><a href="tin-tuc.html">Tin tức / Cẩm nang</a><a href="lien-he.html">Liên hệ</a>
+      <a class="btn btn-sm" href="gui-hat-giong.html">Gửi hạt giống</a>
     </nav>
   </div>
 </header>
-
 <main>
 
-<!-- HERO -->
-<section class="hero">
-  <div class="wrap hero-grid">
+<!-- Dải 1: Banner + câu chuyện Hạt giống 001 -->
+<section class="banner">
+  <svg class="roots" viewBox="0 0 400 300" aria-hidden="true"><path d="M200 0 V90 C200 130 150 150 110 190 C80 220 60 260 40 300"/><path d="M200 90 C220 140 280 150 310 200 C330 235 340 270 360 300"/><path d="M200 60 C185 110 190 170 200 300"/><path d="M110 190 C120 230 100 260 90 300"/><path d="M310 200 C290 240 300 270 290 300"/><path d="M150 150 C120 150 90 140 60 150"/><path d="M260 150 C290 140 330 150 370 140"/></svg>
+  <div class="wrap banner-grid">
     <div>
-      <p class="eyebrow">Dự án sáng tạo vì cộng đồng</p>
-      <h1>Hạt Giống <em>Bỏ Quên</em></h1>
-      <p class="tagline">Nơi những ý tưởng vì quê hương được đánh thức</p>
-      <p class="lead">Một cơ chế đánh thức những ý tưởng vì quê hương mà sinh viên từng nghĩ ra nhưng bỏ dở khi rời quê đi học xa. Chúng tôi ghép các ý tưởng đó với những người có kỹ năng phù hợp để cùng hiện thực hóa thành mô hình tạo việc làm, sinh kế thật tại chính địa phương, rồi trao lại quyền vận hành cho người khởi nguồn và cộng đồng.</p>
-      <div class="hero-cta">
-        <a class="btn" href="#gui-hat">🌰 Gửi một hạt giống</a>
-        <a class="btn btn-ghost" href="#vuon-uom">🔍 Khám phá vườn ươm</a>
+      <p class="eyebrow">Nền tảng kết nối nguồn lực cho ý tưởng</p>
+      <h1>Ý tưởng không chết — <em>chỉ chờ được kết nối.</em></h1>
+      <p class="lead">MYSEED kết nối những hạt giống ý tưởng bị bỏ quên với vốn, nhân lực, chuyên môn và đối tác, để chúng bén rễ thành sinh kế ngay tại quê hương.</p>
+      <div class="banner-cta">
+        <a class="btn btn-gold" href="gui-hat-giong.html">Gửi hạt giống</a>
+        <a class="btn btn-ghost" href="vuon-uom.html">Khám phá Vườn Ươm</a>
       </div>
+      <p class="program">Chương trình “Sinh viên thế hệ mới” · Chủ đề “Quê mình có việc, Gen ‘Ziệt’ có cách”</p>
     </div>
-    <figure class="hero-quote">
-      <div class="sprout" aria-hidden="true">
-        <svg viewBox="0 0 120 120"><path class="soil" d="M10 96 Q60 84 110 96 L110 112 L10 112Z"/><path class="stem" d="M60 94 C60 70 60 58 60 46"/><path class="leaf" d="M60 60 C44 58 34 46 34 32 C50 32 60 44 60 60Z"/><path class="leaf" d="M60 50 C74 48 86 38 88 22 C72 22 60 34 60 50Z"/><circle class="seed" cx="60" cy="100" r="5"/></svg>
+    <aside class="seed-story">
+      <span class="tag-001">Hạt giống 001 · Đắk Nông</span>
+      <h3>Một khu rừng dược liệu đang chờ được kết nối</h3>
+      <p>Rừng tự nhiên, hơn 300 loài dược liệu, một điểm du lịch sinh thái đã được công nhận và một mô hình trồng sâm đã thử nghiệm thành công. Nhưng khách mỗi năm còn ít và sâm Bố chính mới trồng ở quy mô 1 ha, vì thiếu vốn, thiếu truyền thông và chưa có đầu ra.</p>
+      <div class="story-stats">
+        <div><b>17.254,46 ha</b><span>rừng tự nhiên sản xuất</span></div>
+        <div><b>300+</b><span>loài cây dược liệu</span></div>
+        <div><b>~3.000</b><span>khách/năm tại Đắk Ken</span></div>
+        <div><b>1,0 ha</b><span>sâm Bố chính đang trồng</span></div>
       </div>
-      <blockquote>“Chúng tôi không bắt đầu bằng một dự án. Chúng tôi bắt đầu bằng một ý tưởng mà một người trẻ từng bỏ cuộc.”</blockquote>
-    </figure>
+      <a href="du-an.html#hat-giong-001">Xem hồ sơ Hạt giống 001 →</a>
+    </aside>
   </div>
 </section>
 
-<!-- PROBLEM -->
-<section id="van-de" class="section">
-  <div class="wrap">
-    <p class="eyebrow">Bối cảnh & vấn đề</p>
-    <h2>Sinh viên không phải không muốn về quê.<br>Chỉ là chưa có nơi để ý tưởng sống được.</h2>
-    <div class="stats">
-      <article class="stat">
-        <div class="stat-num">11,7%</div>
-        <p>Thanh niên nông thôn không việc làm, không học tập/đào tạo (NEET) — so với <b>8,2%</b> ở thành thị.</p>
-        <small>GSO, quý I/2025</small>
-      </article>
-      <article class="stat">
-        <div class="stat-num">7,2<span> tr/tháng</span></div>
-        <p>Thu nhập bình quân lao động nông thôn — thấp hơn mức <b>9,9 triệu</b> ở thành thị.</p>
-        <small>GSO, quý II/2025</small>
-      </article>
-      <article class="stat">
-        <div class="stat-num">36,2%</div>
-        <p>Người di cư đi theo hướng nông thôn → thành thị, phần lớn vì lý do kinh tế.</p>
-        <small>Khảo sát di cư quốc gia</small>
-      </article>
-      <article class="stat">
-        <div class="stat-num">606</div>
-        <p>Sinh viên gốc nông thôn được khảo sát: nơi có nhiều doanh nghiệp địa phương, ý định quay về cao hơn hẳn.</p>
-        <small>HCMCOUJS, 2025</small>
-      </article>
+<!-- Dải 2: Giới thiệu ngắn + số liệu -->
+<section class="section">
+  <div class="wrap intro-grid">
+    <div>
+      <p class="eyebrow">MYSEED là gì?</p>
+      <h2>Tìm đúng nguồn lực cho đúng dự án</h2>
+      <p>MYSEED là một nền tảng website kết nối những ý tưởng có tiềm năng nhưng chưa được triển khai, gọi là “hạt giống”, với các nguồn lực cần thiết để biến chúng thành dự án thật: vốn, nhân lực, chuyên môn, công nghệ và đối tác.</p>
+      <p>Người có ý tưởng có thể là sinh viên, người dân địa phương, chủ hộ sản xuất, doanh nghiệp nhỏ hay bất kỳ ai từng nghĩ ra điều gì đó cho quê hương nhưng chưa thể làm. Không phải ý tưởng nào cũng cần tiền, nhưng ý tưởng nào cũng cần được nhìn thấy, được hoàn thiện và được gặp đúng người.</p>
+      <a class="btn btn-ghost btn-sm" href="gioi-thieu.html">Tìm hiểu thêm</a>
     </div>
-
-    <div class="callout">
-      <div>
-        <h3>Case cụ thể: cam sành Vĩnh Long</h3>
-        <p>~18.000 ha (vượt quy hoạch 17.000 ha), sản lượng hơn <b>900.000 tấn/năm</b>. Giá tại vườn chỉ còn <b>1.000–2.000đ/kg</b> trong khi chi phí sản xuất tối thiểu <b>5.000–8.000đ/kg</b> — từng đạt 13.000–20.000đ/kg giai đoạn 2015–2020.</p>
-        <p class="muted">Hái thì tiền công cao hơn tiền bán; không hái thì cây mất sức, ảnh hưởng cả vụ sau. Nông dân lỗ 40–70 triệu đồng mỗi công (1.000m²).</p>
+    <div>
+      <h3>Chiếc phễu hẹp dần của ý tưởng sinh viên</h3>
+      <div class="funnel">
+        <div class="funnel-step"><b>33.808</b><p>dự án khởi nghiệp của sinh viên, giai đoạn 2020–2024</p></div>
+        <div class="funnel-step"><b>~300</b><p>doanh nghiệp được các trường đại học ươm tạo từ năm 2020</p></div>
+        <div class="funnel-step"><b>12</b><p>doanh nghiệp gọi được vốn từ nhà đầu tư</p></div>
       </div>
-      <div class="price-bars" aria-label="So sánh giá bán và chi phí sản xuất cam sành">
-        <div class="pb-row"><span>Giá 2015–2020</span><div class="pb-track"><i style="--w:100%" class="pb-good"></i></div><b>13–20k</b></div>
-        <div class="pb-row"><span>Chi phí SX</span><div class="pb-track"><i style="--w:40%" class="pb-mid"></i></div><b>5–8k</b></div>
-        <div class="pb-row"><span>Giá hiện nay</span><div class="pb-track"><i style="--w:10%" class="pb-bad"></i></div><b>1–2k</b></div>
-        <small>đ/kg · thanh thể hiện mức cao nhất của khoảng</small>
+      <p class="src" style="margin-top:8px">Nguồn: Bộ GD&amp;ĐT, tổng kết 7 năm Đề án 1665. Các chỉ số đo đối tượng khác nhau, không quy đổi thành tỷ lệ. Ý tưởng của người dân, hộ sản xuất nằm hoàn toàn ngoài chiếc phễu này.</p>
+      <div class="table-wrap gap-table">
+        <table>
+          <thead><tr><th>Việt Nam, 2026</th><th class="r">Nông thôn</th><th class="r">Thành thị</th></tr></thead>
+          <tbody>
+            <tr><td>Thu nhập bình quân lao động, 6 tháng đầu năm (triệu đồng/tháng)</td><td class="r">7,9</td><td class="r">10,6</td></tr>
+            <tr><td>Thanh niên 15–24 tuổi NEET, quý II</td><td class="r">11,5%</td><td class="r">7,8%</td></tr>
+            <tr><td>Lao động có việc làm phi chính thức, quý II</td><td class="r">71,2%</td><td class="r">47,1%</td></tr>
+          </tbody>
+        </table>
       </div>
+      <p class="src" style="margin-top:8px">Nguồn: Cục Thống kê – Bộ Tài chính, 03/07/2026.</p>
     </div>
   </div>
 </section>
 
-<!-- BENEFICIARIES -->
-<section id="doi-tuong" class="section section-tight">
+<!-- Dải 3: Cơ chế 5 bước -->
+<section class="section section-alt">
   <div class="wrap">
-    <p class="eyebrow">Đối tượng thụ hưởng</p>
-    <h2>Dự án phục vụ ai?</h2>
-    <div class="two">
-      <div class="mini"><h4>Thụ hưởng trực tiếp</h4><p>Sinh viên đang học xa quê, những người từng có ý tưởng giúp quê hương nhưng đã bỏ dở.</p></div>
-      <div class="mini"><h4>Thụ hưởng cuối</h4><p>Cộng đồng nông dân trồng cam tại địa phương, nơi ý tưởng được hiện thực hóa sẽ tạo ra việc làm, thu nhập hoặc mô hình sinh kế mới.</p></div>
+    <div class="section-head">
+      <p class="eyebrow">Cơ chế vận hành</p>
+      <h2>Năm bước của một hạt giống</h2>
+      <p>Toàn bộ hành trình diễn ra trên một website duy nhất. MYSEED chỉ đề xuất kết nối; mọi quyết định hợp tác thuộc về các bên, và người khởi nguồn luôn giữ quyền với ý tưởng của mình.</p>
     </div>
-  </div>
-</section>
-
-<!-- MECHANISM -->
-<section id="co-che" class="section section-alt">
-  <div class="wrap">
-    <p class="eyebrow">Ý tưởng cốt lõi</p>
-    <h2>Vòng đời của một “hạt giống”</h2>
-    <p class="section-lead">Ý tưởng được cùng phát triển — không bị lấy đi — và cuối cùng được trao lại cho người khởi nguồn và cộng đồng.</p>
     <ol class="steps">
-      <li><span class="step-ico">🌰</span><h3>Gửi</h3><p>Sinh viên gửi một ý tưởng từng nghĩ ra để tạo việc làm/sinh kế cho quê mình nhưng chưa làm được, kèm lý do vì sao dừng lại.</p></li>
-      <li><span class="step-ico">🔍</span><h3>Tìm thấy</h3><p>Sinh viên khác, có kỹ năng phù hợp, khám phá và chọn một hạt giống muốn “ươm”.</p></li>
-      <li><span class="step-ico">🤝</span><h3>Ươm</h3><p>Người nhận nuôi liên hệ người gửi: <i>“Nếu làm lại, bạn sẽ thay đổi điều gì?”</i> — cùng phát triển ý tưởng.</p></li>
-      <li><span class="step-ico">🌱</span><h3>Nảy mầm</h3><p>Nhóm mới có thời gian giới hạn để biến ý tưởng thành mô hình thử nghiệm thật, tạo thu nhập tại đúng địa phương.</p></li>
-      <li><span class="step-ico">🌾</span><h3>Bén rễ</h3><p>Người khởi nguồn trở thành một phần đội triển khai tại quê — ý tưởng bén rễ nơi nó được sinh ra.</p></li>
+      <li><span class="step-no">BƯỚC 1</span><h3>Gửi</h3><p>Điền biểu mẫu “Gửi hạt giống”: ý tưởng, địa phương, lý do đã dừng lại và những gì đang có sẵn.</p></li>
+      <li><span class="step-no">BƯỚC 2</span><h3>Tìm thấy</h3><p>Ý tưởng được sàng lọc, hoàn thiện thành hồ sơ chuẩn, thẩm định rồi công khai trong Vườn Ươm.</p></li>
+      <li><span class="step-no">BƯỚC 3</span><h3>Ươm</h3><p>Dự án khai báo nguồn lực còn thiếu; nhà đầu tư, chuyên gia, doanh nghiệp và đội ươm gửi yêu cầu kết nối.</p></li>
+      <li><span class="step-no">BƯỚC 4</span><h3>Nảy mầm</h3><p>Các bên thống nhất hình thức hợp tác, hình thành đội thực hiện và bắt đầu triển khai.</p></li>
+      <li><span class="step-no">BƯỚC 5</span><h3>Bén rễ</h3><p>Kết quả được đo lường và ghi thành “câu chuyện bén rễ” để truyền cảm hứng cho hạt giống tiếp theo.</p></li>
     </ol>
-
-    <h3 class="sub">Điểm khác biệt trong cách tiếp cận</h3>
-    <div class="table-wrap">
-      <table class="compare">
-        <thead><tr><th></th><th>Cách tiếp cận thông thường</th><th class="hl">MYSEED · Hạt Giống Bỏ Quên</th></tr></thead>
-        <tbody>
-          <tr><th>Xuất phát điểm</th><td>Một nhóm tự đề xuất và triển khai dự án của chính mình</td><td class="hl">Một người khác (nông dân/sinh viên quê) đã có sẵn ý tưởng nhưng từng bỏ cuộc</td></tr>
-          <tr><th>Vai trò đội triển khai</th><td>Chủ sở hữu và người thực hiện dự án</td><td class="hl">Người “ươm” — tìm, ghép kỹ năng, đồng phát triển cùng người khởi nguồn</td></tr>
-          <tr><th>Trọng tâm đánh giá</th><td>Dự án có được triển khai và tạo tác động không</td><td class="hl">Ý tưởng bị bỏ quên có được đánh thức và trao lại đúng chỗ không</td></tr>
-          <tr><th>Ai giữ quyền tiếp tục</th><td>Đội triển khai</td><td class="hl">Người khởi nguồn / cộng đồng địa phương</td></tr>
-        </tbody>
-      </table>
+    <div class="chain" aria-label="Chuỗi giá trị">
+      <span>Ý tưởng</span><i>→</i><span>Hoàn thiện</span><i>→</i><span>Dự án</span><i>→</i><span>Kết nối nguồn lực</span><i>→</i><span>Triển khai</span><i>→</i><span>Tác động</span>
     </div>
   </div>
 </section>
 
-<!-- SEED GARDEN (platform demo) -->
-<section id="vuon-uom" class="section">
+<!-- Dải 4: Hạt giống nổi bật -->
+<section class="section">
   <div class="wrap">
-    <p class="eyebrow">Nền tảng trung gian · bản mô phỏng</p>
-    <h2>Vườn ươm hạt giống</h2>
-    <p class="section-lead">Đây là hình dung về website trung gian của MYSEED: mỗi thẻ là một ý tưởng từng bị bỏ dở, kèm lý do dừng lại và kỹ năng còn thiếu. Hạt giống đầu tiên là case cam sành trong bản đề xuất. Bạn có thể thử gửi thêm hạt giống của mình ở bên dưới.</p>
-
-    <div class="filters" role="group" aria-label="Lọc theo giai đoạn">
-      <button class="chip is-on" data-filter="all">Tất cả</button>
-      <button class="chip" data-filter="gui">🌰 Mới gửi</button>
-      <button class="chip" data-filter="uom">🤝 Đang ươm</button>
-      <button class="chip" data-filter="nay-mam">🌱 Nảy mầm</button>
-      <button class="chip" data-filter="ben-re">🌾 Bén rễ</button>
-      <input class="search" type="search" placeholder="Tìm theo quê, kỹ năng, nông sản…" aria-label="Tìm hạt giống">
+    <div class="section-head">
+      <p class="eyebrow">Hạt giống nổi bật · Đang ươm</p>
+      <h2>Hạt giống 001: Sâm và dược liệu bản địa, Đắk Nông</h2>
+      <p>Hạt giống đầu tiên trên MYSEED, do Công ty TNHH MTV đầu tư phát triển Đại Thành gửi lên. Lâm phần nằm tại xã Thuận An, tỉnh Lâm Đồng (trước sắp xếp là tỉnh Đắk Nông).</p>
     </div>
-
-    <div class="seed-grid" id="seedGrid" aria-live="polite"></div>
-    <p class="empty" id="seedEmpty" hidden>Chưa có hạt giống nào khớp bộ lọc.</p>
-
-    <div id="gui-hat" class="submit">
-      <div class="submit-intro">
-        <h3>🌰 Gửi một hạt giống</h3>
-        <p>Bạn từng nghĩ ra một ý tưởng giúp quê mình nhưng đã dừng lại? Hãy kể cho chúng tôi — cả lý do vì sao bạn dừng. Chính lý do đó giúp ghép đúng người.</p>
-        <p class="muted small">Bản mô phỏng: hạt giống chỉ được lưu trên trình duyệt của bạn.</p>
-      </div>
-      <form id="seedForm" class="form">
-        <label>Tên ý tưởng<input name="title" required maxlength="80" placeholder="VD: Bán cam trực tiếp cho sinh viên đồng hương"></label>
-        <div class="form-row">
-          <label>Quê hương<input name="place" required maxlength="40" placeholder="VD: Trà Ôn, Vĩnh Long"></label>
-          <label>Nông sản / lĩnh vực<input name="topic" maxlength="40" placeholder="VD: Cam sành"></label>
+    <div class="feature">
+      <div class="axes">
+        <div class="axis">
+          <h3>Trục 1 · Đầu ra cho sâm Bố chính</h3>
+          <p>Trồng dưới tán rừng từ năm 2020, đạt khoảng 3.000–3.500 kg/ha/năm. Sâm ít người biết đến nên đầu ra bế tắc; Công ty mới dừng ở 1,0 ha.</p>
+          <div class="kv">
+            <div><b>1,0 ha</b><span>đang trồng</span></div>
+            <div><b>3.000–3.500</b><span>kg/ha/năm</span></div>
+            <div><b>Hàng trăm ha</b><span>có thể tổ chức khi có đầu ra</span></div>
+          </div>
         </div>
-        <label>Ý tưởng của bạn<textarea name="idea" required rows="3" maxlength="400" placeholder="Bạn định làm gì, cho ai?"></textarea></label>
-        <label>Vì sao bạn dừng lại?<textarea name="why" required rows="2" maxlength="300" placeholder="VD: Không biết đóng gói giữ tươi, không có vốn thuê xe lạnh…"></textarea></label>
-        <label>Kỹ năng cần tìm <span class="muted">(cách nhau bằng dấu phẩy)</span><input name="skills" maxlength="100" placeholder="Logistics, Marketing, Công nghệ thực phẩm"></label>
-        <button class="btn" type="submit">Gieo hạt giống</button>
-        <p class="form-msg" id="formMsg" role="status"></p>
-      </form>
-    </div>
-  </div>
-</section>
-
-<!-- CASE STUDY -->
-<section id="cam-sanh" class="section section-alt">
-  <div class="wrap">
-    <p class="eyebrow">Case nghiên cứu</p>
-    <h2>Cam sành Vĩnh Long: từ lỗ sang lãi</h2>
-    <p class="section-lead">Một sinh viên quê Trà Ôn từng muốn bán cam trực tiếp cho mạng lưới sinh viên đồng hương ở TP.HCM, cắt khâu thương lái — nhưng bỏ dở vì không biết đóng gói giữ tươi, không có kênh bán, không có vốn thuê xe lạnh. Một nhóm sinh viên logistics, marketing và công nghệ thực phẩm đã tìm thấy hạt giống này.</p>
-
-    <div class="pilot-facts">
-      <div><b>500 kg</b><span>thu mua tại vườn</span></div>
-      <div><b>~5.000đ/kg</b><span>giá thu mua (thay vì 1.000–2.000đ)</span></div>
-      <div><b>12–15k đ/kg</b><span>bán cho SV đồng hương, rẻ hơn giá chợ</span></div>
-    </div>
-
-    <div class="case-grid">
+        <div class="axis">
+          <h3>Trục 2 · Điểm du lịch sinh thái Đắk Ken</h3>
+          <p>Được UBND tỉnh công nhận theo Quyết định 293/QĐ-UBND. Khách chỉ khoảng 3.000 lượt/năm, chủ yếu dịp lễ, Tết. Quy hoạch trên 58.000 m² với vốn khoảng 5 tỷ đồng.</p>
+          <div class="capital">
+            <div class="capital-bar" role="img" aria-label="Đã đầu tư khoảng 2,1 trên 5 tỷ đồng"><i></i></div>
+            <div class="capital-legend"><span>Đã đầu tư giai đoạn 1: ~2,1 tỷ</span><span>Còn thiếu: ~2,9 tỷ / 5 tỷ</span></div>
+          </div>
+        </div>
+      </div>
       <div class="card">
-        <h3>Lợi nhuận ròng của nông dân (500 kg)</h3>
-        <div class="bb">
-          <div class="bb-col"><div class="bb-bar neg" style="--h:20%"><span>−250.000đ</span></div><p>Qua thương lái<br><small>~1.500đ/kg</small></p></div>
-          <div class="bb-col"><div class="bb-bar pos" style="--h:82%"><span>+1.500.000đ</span></div><p>Qua MYSEED<br><small>~5.000đ/kg</small></p></div>
+        <h3>Hạt giống này đang cần</h3>
+        <div class="needs">
+          <span class="need">Vốn hoàn thiện Đắk Ken</span><span class="need">Truyền thông – thương hiệu</span><span class="need">Đối tác đầu ra cho sâm</span><span class="need">Chuyên gia chế biến sâu</span><span class="need">Tư vấn pháp lý – thuế</span><span class="need">Khách ngoài dịp lễ, Tết</span>
         </div>
-        <p class="muted small">Công hái ~2.000đ/kg (1.000.000đ) ở cả hai trường hợp. Chênh lệch ròng ≈ <b>+1.750.000đ</b> cho cùng sản lượng.</p>
-      </div>
-
-      <div class="card calc">
-        <h3>Thử tính: thu nhập nông dân</h3>
-        <label><span>Sản lượng: <output id="kgOut">500</output> kg</span><input type="range" id="kg" min="100" max="5000" step="100" value="500"></label>
-        <label><span>Giá thu mua qua MYSEED: <output id="priceOut">5.000</output>đ/kg</span><input type="range" id="price" min="2000" max="10000" step="500" value="5000"></label>
-        <div class="calc-out">
-          <div><span>Qua thương lái (1.500đ)</span><b id="resBefore">−250.000đ</b></div>
-          <div><span>Qua MYSEED</span><b id="resAfter">+1.500.000đ</b></div>
-          <div class="calc-diff"><span>Chênh lệch</span><b id="resDiff">+1.750.000đ</b></div>
+        <p>Ba nút thắt lớn nhất là vốn đầu tư, năng lực vận hành và quảng bá – truyền thông. Về lâu dài, người khởi nguồn muốn mở rộng sang 22 loài dược liệu có trữ lượng lớn đã được xác định qua điều tra năm 2020.</p>
+        <div class="pill-row">
+          <a class="btn btn-sm" href="du-an.html#hat-giong-001">Xem hồ sơ và tham gia</a>
+          <a class="btn btn-sm btn-ghost" href="tin-tuc.html#case-study">Đọc case study</a>
         </div>
-        <p class="muted small">Giả định công hái 2.000đ/kg, như trong bản đề xuất.</p>
       </div>
     </div>
-
-    <h3 class="sub">So sánh trước và sau khi áp dụng mô hình</h3>
-    <div class="table-wrap">
-      <table class="costs">
-        <thead><tr><th></th><th class="num">Trước (qua thương lái)</th><th class="num">Sau (qua Hạt Giống Bỏ Quên)</th></tr></thead>
-        <tbody>
-          <tr><td>Giá thu mua tại vườn</td><td class="num">~1.500đ/kg</td><td class="num">~5.000đ/kg</td></tr>
-          <tr><td>Doanh thu nông dân (500kg)</td><td class="num">750.000đ</td><td class="num">2.500.000đ</td></tr>
-          <tr><td>Chi phí thuê nhân công hái (~2.000đ/kg)</td><td class="num">1.000.000đ</td><td class="num">1.000.000đ</td></tr>
-        </tbody>
-        <tfoot><tr class="profit"><th>Lợi nhuận ròng của nông dân</th><td class="num neg-txt">−250.000đ (lỗ)</td><td class="num">+1.500.000đ (lãi)</td></tr></tfoot>
-      </table>
-    </div>
-
-    <h3 class="sub">Chi phí một đợt thí điểm (500 kg)</h3>
-    <div class="table-wrap">
-      <table class="costs">
-        <thead><tr><th>Hạng mục</th><th class="num">Chi phí</th><th>Ghi chú</th></tr></thead>
-        <tbody>
-          <tr><td>Vốn thu mua cam (500kg × 5.000đ)</td><td class="num">2.500.000đ</td><td>Vốn lưu động, thu hồi qua bán hàng</td></tr>
-          <tr><td>Đóng gói (thùng, lưới xốp, nhãn)</td><td class="num">500.000đ</td><td>Giữ độ tươi khi vận chuyển</td></tr>
-          <tr><td>Vận chuyển Trà Ôn → TP.HCM</td><td class="num">1.500.000đ</td><td>Xe tải nhỏ hoặc ghép chành xe khách</td></tr>
-          <tr><td>Truyền thông nội bộ</td><td class="num">300.000đ</td><td>Chủ yếu tự thực hiện</td></tr>
-          <tr><td>Dự phòng phát sinh (~10%)</td><td class="num">480.000đ</td><td>Hao hụt, hư hỏng</td></tr>
-        </tbody>
-        <tfoot>
-          <tr><th>Tổng chi phí pilot</th><td class="num">~5.280.000đ</td><td></td></tr>
-          <tr><th>Doanh thu dự kiến (500kg × 12.000đ)</th><td class="num">6.000.000đ</td><td></td></tr>
-          <tr class="profit"><th>Lợi nhuận gộp</th><td class="num">~720.000đ</td><td>Tái đầu tư đợt tiếp theo</td></tr>
-        </tfoot>
-      </table>
-    </div>
-
-    <div class="three">
-      <div class="mini"><h4>Vốn mồi ban đầu</h4><p>Đóng góp nhỏ từ đội thực hiện hoặc gia đình người khởi nguồn — đủ cho 1 đợt thí điểm.</p></div>
-      <div class="mini"><h4>Đặt cọc trước</h4><p>Thu pre-order từ mạng lưới sinh viên trước khi thu mua, tránh “chôn” vốn vào hàng chưa bán.</p></div>
-      <div class="mini"><h4>Mở rộng</h4><p>Quỹ khởi nghiệp của trường, CLB đồng hương, doanh nghiệp địa phương quan tâm cộng đồng.</p></div>
-    </div>
-
-    <p class="honest"><b>Giới hạn cần nhìn nhận trung thực:</b> mô hình quy mô sinh viên không thể giải quyết toàn bộ 900.000 tấn dư cung. Giá trị thật nằm ở (1) một thí điểm khả thi, đo lường được; (2) một cơ chế nhân rộng sang nhiều hạt giống, nhiều địa phương; (3) một bản đồ dữ liệu về rào cản khởi nghiệp nông thôn của sinh viên Việt Nam.</p>
   </div>
 </section>
 
-<!-- SDGs -->
-<section id="sdgs" class="section">
+<!-- Dải 5: Lưới dự án mới nhất -->
+<section class="section section-alt">
   <div class="wrap">
-    <p class="eyebrow">Phát triển bền vững</p>
-    <h2>Liên kết với các SDGs — trung thực theo mức độ</h2>
-    <p class="section-lead">Tập trung sâu vào 4 mục tiêu có liên kết trực tiếp, đo lường được; các mục tiêu còn lại được ghi nhận đúng mức, không gượng ép.</p>
-    <div class="sdg-core">
-      <article class="sdg-card" style="--c:#e5243b"><span class="sdg-no">1</span><h3>Xóa nghèo</h3><p class="tgt">Target 1.4 · 1.5</p><p>Thu mua trực tiếp, giá công bằng giúp nông dân tiếp cận thị trường và chống chịu cú sốc giá.</p><p class="kpi">+1,75 triệu đ ròng / 500kg</p></article>
-      <article class="sdg-card" style="--c:#a21942"><span class="sdg-no">8</span><h3>Việc làm bền vững</h3><p class="tgt">Target 8.3 · 8.6</p><p>“Doanh nghiệp siêu nhỏ” do sinh viên và nông dân cùng điều hành, tạo cơ hội thực chiến tại quê.</p><p class="kpi">1 hộ nông dân + 3–4 SV / đợt</p></article>
-      <article class="sdg-card" style="--c:#fd6925"><span class="sdg-no">9</span><h3>Công nghiệp, sáng tạo & hạ tầng</h3><p class="tgt">Target 9.3</p><p>Kênh phân phối thay thế qua mạng lưới sinh viên đồng hương, bớt phụ thuộc thương lái.</p><p class="kpi">≥ 1 kênh phân phối duy trì</p></article>
-      <article class="sdg-card" style="--c:#bf8b2e"><span class="sdg-no">12</span><h3>Tiêu dùng & sản xuất có trách nhiệm</h3><p class="tgt">Target 12.3</p><p>Giảm cam bị bỏ không hái hoặc hư hỏng tại vườn — tổn thất trong chuỗi cung ứng.</p><p class="kpi">500kg được tiêu thụ thay vì bỏ phí</p></article>
+    <div class="section-head">
+      <p class="eyebrow">Vườn Ươm</p>
+      <h2>Hạt giống mới nhất</h2>
+      <p>Ba dạng khác nhau của cùng một vấn đề: ý tưởng có giá trị nhưng thiếu đúng một thứ để đi tiếp.</p>
     </div>
-    <div class="sdg-legend"><span><i class="lv lv-core"></i>Trọng tâm</span><span><i class="lv lv-ind"></i>Gián tiếp</span><span><i class="lv lv-none"></i>Không trực tiếp</span></div>
-    <div class="sdg-grid" id="sdgGrid"></div>
-    <p class="sdg-note" id="sdgNote">Chọn một ô để xem ghi chú.</p>
+    <div class="seed-grid" id="latestSeeds"></div>
+    <p style="margin-top:22px"><a class="btn btn-ghost" href="vuon-uom.html">Vào Vườn Ươm</a></p>
   </div>
 </section>
 
-<!-- ROADMAP -->
-<section id="lo-trinh" class="section section-alt">
+<!-- Dải 6: Đối tác, người đồng hành -->
+<section class="section">
   <div class="wrap">
-    <p class="eyebrow">Lộ trình triển khai</p>
-    <h2>Ba giai đoạn gieo – chăm – nhân rộng</h2>
-    <div class="roadmap">
-      <article class="phase"><span class="phase-no">01</span><h3>Thí điểm</h3><p>Xác định hạt giống cam sành; xác minh thực địa; ghép đội ươm đa kỹ năng; đối thoại với người khởi nguồn; pilot thu mua – đóng gói – phân phối 500kg.</p><p class="kpi">KPI: 1 đợt pilot · thu nhập nông dân tăng tối thiểu 2 lần</p></article>
-      <article class="phase"><span class="phase-no">02</span><h3>Đánh giá & hoàn thiện</h3><p>Thu phản hồi từ nông dân và người mua; điều chỉnh giá và vận hành; chuẩn hóa quy trình “gửi hạt giống” thành biểu mẫu đơn giản.</p><p class="kpi">KPI: quy trình chuẩn hóa · ≥ 80% người tham gia đánh giá khả thi</p></article>
-      <article class="phase"><span class="phase-no">03</span><h3>Nhân rộng</h3><p>Mở rộng sang nông sản/địa phương khác; mời thêm đội ươm; xây dựng cộng đồng Hạt Giống Bỏ Quên thu thập ý tưởng liên tục.</p><p class="kpi">KPI: ≥ 2 hạt giống mới được ươm trong 6 tháng</p></article>
+    <div class="section-head">
+      <p class="eyebrow">Đối tác, người đồng hành</p>
+      <h2>Cùng ươm những hạt giống đầu tiên</h2>
     </div>
-
-    <div class="two">
-      <div>
-        <h3 class="sub">Đối tác & người đồng hành</h3>
-        <ul class="list">
-          <li><b>Hợp tác xã cam sành địa phương</b> (VD: Phương Thúy, Khánh Nhân) — nguồn cung và người kiểm chứng tính thực tế.</li>
-          <li><b>Hội sinh viên đồng hương Vĩnh Long/Trà Ôn</b> tại các trường ĐH ở TP.HCM — kênh phân phối thử.</li>
-          <li><b>Đơn vị logistics lạnh quy mô nhỏ</b> — đối tác kỹ thuật cho khâu bảo quản khó nhất.</li>
-        </ul>
+    <div class="partners">
+      <div class="partner-main">
+        <p class="eyebrow">Đối tác chủ thể · Hạt giống 001</p>
+        <h3>Công ty TNHH MTV đầu tư phát triển Đại Thành</h3>
+        <p>Cung cấp thông tin, căn cứ pháp lý và cơ sở thực địa tại lâm phần và Điểm du lịch sinh thái Đắk Ken.</p>
       </div>
-      <div>
-        <h3 class="sub">Quản trị rủi ro</h3>
-        <ul class="list">
-          <li><b>Mất đầu mối vườn:</b> duy trì ít nhất 2 vườn/hộ dự phòng từ khi xác minh thực địa.</li>
-          <li><b>Giá biến động:</b> chốt giá mua và bán trước khi triển khai; 10% dự phòng ngân sách.</li>
-          <li><b>Kênh phân phối gián đoạn:</b> phương án thay thế qua mạng xã hội cá nhân/nhóm lớp.</li>
-        </ul>
-        <p class="muted small">Luôn có người khởi nguồn hiểu rõ thực địa để cùng đội ươm xoay trục nhanh.</p>
+      <div class="seeking">
+        <div><h4>Nhà đầu tư</h4><p>Quan tâm dự án gắn với tài nguyên bản địa và cộng đồng, trước hết là vốn cho giai đoạn tiếp theo của Đắk Ken.</p></div>
+        <div><h4>Đối tác đầu ra</h4><p>Nhà hàng, đơn vị phân phối, công ty lữ hành, kênh bán trực tuyến cho sâm Bố chính và dược liệu.</p></div>
+        <div><h4>Tổ chức đồng hành</h4><p>Trường học, quỹ khởi nghiệp, doanh nghiệp địa phương, tổ chức phát triển cộng đồng.</p></div>
+        <div><h4>Mentor và chuyên gia</h4><p>Dược liệu, du lịch sinh thái, pháp lý – thuế, truyền thông, công nghệ.</p></div>
       </div>
     </div>
-
-    <h3 class="sub">Đo lường tác động & tính bền vững</h3>
-    <div class="three">
-      <div class="mini"><h4>Ngắn hạn</h4><p>Số kg cam thu mua công bằng, doanh số bán thử, chênh lệch thu nhập nông dân trước/sau.</p></div>
-      <div class="mini"><h4>Trung hạn</h4><p>Đầu mối cung ứng duy trì sau thí điểm; số hạt giống mới được gửi vào hệ thống.</p></div>
-      <div class="mini"><h4>Dài hạn</h4><p>Nhân rộng nhiều địa phương/nông sản; bản đồ dữ liệu rào cản khởi nghiệp nông thôn của sinh viên.</p></div>
-    </div>
   </div>
 </section>
-
-<!-- TEAM -->
-<section id="doi-ngu" class="section">
-  <div class="wrap">
-    <p class="eyebrow">Vai trò của đội</p>
-    <h2>Chúng tôi là người đánh thức, không phải chủ dự án</h2>
-    <p class="section-lead">Đội đi tìm hạt giống, đứng giữa người khởi nguồn và đội kỹ năng, và đảm bảo hạt giống được trao lại đúng chỗ khi kết thúc — không giữ lại thành tích cho riêng mình.</p>
-    <div class="three">
-      <div class="mini"><h4>Đi tìm hạt giống</h4><p>Tìm những ý tưởng vì quê hương đã bị bỏ dở và xác minh chúng tại thực địa.</p></div>
-      <div class="mini"><h4>Đứng giữa hai phía</h4><p>Kết nối người khởi nguồn với đội có kỹ năng phù hợp để cùng phát triển ý tưởng.</p></div>
-      <div class="mini"><h4>Trao lại đúng chỗ</h4><p>Khi kết thúc, hạt giống thuộc về người khởi nguồn và cộng đồng địa phương.</p></div>
-    </div>
-  </div>
-</section>
-
 <section class="closing">
   <div class="wrap">
-    <p class="closing-quote">“Chúng tôi không bắt đầu bằng một dự án. Chúng tôi bắt đầu bằng một ý tưởng mà một người trẻ từng bỏ cuộc.”</p>
-    <p class="closing-sub">Mọi ý tưởng bị bỏ quên đều xứng đáng có một cơ hội thứ hai để sống.</p>
-    <a class="btn btn-light" href="#gui-hat">🌰 Gieo hạt giống của bạn</a>
+    <p class="q">“Một ý tưởng không nên bị bỏ quên chỉ vì người sở hữu nó chưa có đủ nguồn lực.”</p>
+    <p class="s">Mọi ý tưởng bị bỏ quên đều xứng đáng có cơ hội thứ hai để sống.</p>
+    <a class="btn btn-band" href="gui-hat-giong.html">Gửi hạt giống của bạn</a>
   </div>
 </section>
-
 </main>
-
 <footer class="footer">
-  <div class="wrap footer-inner">
-    <span>🌱 MYSEED · Hạt Giống Bỏ Quên</span>
-    <span class="muted">Số liệu: GSO 2025, Sở NN&PTNT Vĩnh Long, HCMCOUJS 2025 — theo bản đề xuất dự án.</span>
-    <a href="#top">Lên đầu trang ↑</a>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="index.html"><span class="brand-mark"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21V11" stroke="#f3d27a" stroke-width="2" stroke-linecap="round" fill="none"/><path d="M12 13C8 13 5.5 10.5 5.5 6.5 9.5 6.5 12 9 12 13Z" fill="#cfe7c4"/><path d="M12 11C12 7.5 14.5 4.5 18.5 4.5 18.5 8.5 16 11 12 11Z" fill="#9fd49a"/></svg></span><b>MYSEED</b></a>
+        <p class="muted small" style="margin-top:12px">Ý tưởng không chết — chỉ chờ được kết nối. Nền tảng kết nối những hạt giống ý tưởng bị bỏ quên với vốn, nhân lực, chuyên môn và đối tác để bén rễ thành sinh kế ngay tại quê hương.</p>
+      </div>
+      <div>
+        <h4>Khám phá</h4>
+        <ul>
+          <li><a href="vuon-uom.html">Vườn Ươm</a></li>
+          <li><a href="du-an.html#hat-giong-001">Hạt giống 001</a></li>
+          <li><a href="gui-hat-giong.html">Gửi hạt giống</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Về MYSEED</h4>
+        <ul>
+          <li><a href="gioi-thieu.html#ve-chung-toi">Về chúng tôi</a></li>
+          <li><a href="gioi-thieu.html#co-che">Cơ chế vận hành</a></li>
+          <li><a href="gioi-thieu.html#sdgs">Liên kết SDGs</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Thông tin</h4>
+        <ul>
+          <li><a href="tin-tuc.html#case-study">Case study</a></li>
+          <li><a href="tin-tuc.html#cam-nang">Cẩm nang</a></li>
+          <li><a href="lien-he.html">Liên hệ</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>Chương trình “Sinh viên thế hệ mới” · Chủ đề “Quê mình có việc, Gen ‘Ziệt’ có cách”</span>
+      <span>Bản mockup tĩnh · dữ liệu theo proposal MYSEED 09/2026</span>
+    </div>
   </div>
 </footer>
-
 <script src="script.js"></script>
 </body>
 </html>
