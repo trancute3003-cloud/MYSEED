@@ -530,3 +530,6 @@ input:focus, textarea:focus, select:focus { outline: 2px solid var(--forest); ou
 @media (max-width: 800px) { .hero-seed, .context { grid-template-columns: 1fr; } }
 @media (max-width: 480px) { .why-grid { grid-template-columns: 1fr; } .hero-seed { padding: 20px; } }
 .partner-main .eyebrow, .cta-box .eyebrow { color: #ffe08a; }
+.recruit > div { min-width: 0; }
+.recruit-roles { margin-top: 12px; }
+.recruit-roles .need { background: var(--surface); }
